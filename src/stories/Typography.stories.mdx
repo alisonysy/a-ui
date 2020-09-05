@@ -1,0 +1,57 @@
+import { Meta, Typeset, Canvas } from '@storybook/addon-docs/blocks';
+
+import { typography } from '../components/shared/styles';
+
+<Meta title="Global Styles/Typography" />
+
+# Typography
+<hr/>
+<br/>
+
+## Font Weight
+以下是以`font-size`为28px的不同字重样式：
+### regular: 字重为400
+<Typeset
+  fontWeight={typography.weight.regular}
+  fontSizes={[typography.size.m3]}
+  sampleText={'Sample Text...'}
+/>
+
+### bold: 字重为700
+<Typeset
+  fontWeight={typography.weight.bold}
+  fontSizes={[typography.size.m3]}
+  sampleText={'Sample Text...'}
+/>
+
+### extra bold: 字重为800
+<Typeset
+  fontWeight={typography.weight.extrabold}
+  fontSizes={[typography.size.m3]}
+  sampleText={'Sample Text...'}
+/>
+
+### black: 字重为900
+<Typeset
+  fontWeight={typography.weight.black}
+  fontSizes={[typography.size.m3]}
+  sampleText={'Sample Text...'}
+/>
+
+## Font Size
+以下是以`font-weight`为400的不同字重样式：
+<Typeset
+	fontSizes={[
+		Number(typography.size.s1),
+		Number(typography.size.s2),
+		Number(typography.size.s3),
+		Number(typography.size.m1),
+		Number(typography.size.m2),
+		Number(typography.size.m3),
+		Number(typography.size.l1),
+		Number(typography.size.l2),
+		Number(typography.size.l3),
+	]}
+	fontWeight={typography.weight.regular}
+  sampleText={'I\'m sample text...'}
+/>

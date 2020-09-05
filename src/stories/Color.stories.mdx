@@ -1,0 +1,73 @@
+import { Meta, ColorPalette, ColorItem, Description } from '@storybook/addon-docs/blocks';
+import { color } from '../components/shared/styles';
+import dedent from 'ts-dedent';
+
+<Meta title="Global Styles/Color Scheme" />
+
+# Color Scheme
+<hr/>
+<br/>
+
+## Theme Color
+<Description markdown={dedent`
+  This is a-ui's theme color scheme.
+`} />
+
+<ColorPalette>
+  <ColorItem 
+    title="theme.color.primary"
+    subtitle="Sky Blue Crayola"
+    colors={[color.primary]}
+  />
+  <ColorItem 
+    title="theme.color.secondary"
+    subtitle="Cornflower Blue"
+    colors={[color.secondary]}
+  />
+  <ColorItem 
+    title="theme.color.tertiary"
+    subtitle="Lavender Floral"
+    colors={[color.tertiary]}
+  />
+  <ColorItem 
+    title="theme.color.mauve"
+    subtitle="Mauve"
+    colors={[color.mauve]}
+  />
+  <ColorItem 
+    title="theme.color.cottoncandy"
+    subtitle="Contton Candy"
+    colors={[color.cottoncandy]}
+  />
+</ColorPalette>
+
+## Functional Color
+<Description markdown={dedent`
+  Functional color provides clear messages to users about the component's status, e.g. success, error, failure, etc.. In contrast to theme color, functional color is mainly of low saturation.
+`} />
+
+<ColorPalette>
+  <ColorItem 
+    title="theme.color.positive"
+    subtitle="Positive"
+    colors={[color.positive]}
+  />
+  <ColorItem 
+    title="theme.color.negative"
+    subtitle="Negative"
+    colors={[color.negative]}
+  />
+  <ColorItem 
+    title="theme.color.warning"
+    subtitle="Warning"
+    colors={[color.warning]}
+  />
+</ColorPalette>
+
+## Neutral Color
+<ColorPalette>
+  <ColorItem 
+    title="Neutral Color"
+    colors={[color.lightest, color.lighter, color.light, color.mediumlight, color.medium, color.mediumdark, color.dark, color.darker, color.darkest]}
+  />
+</ColorPalette>
