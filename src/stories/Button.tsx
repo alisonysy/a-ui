@@ -1,5 +1,6 @@
 import React from 'react';
 import './button.css';
+import styled from 'styled-components';
 
 export interface ButtonProps {
   /**
@@ -53,3 +54,11 @@ export const BaseButton: React.FC<ButtonProps> = ( props: ButtonProps ) => {
     <button>{props.label}</button>
   )
 };
+
+export const AnotherButton = styled.button.attrs({ className: 'foo' })`
+  border-radius: 50%;
+  border: 1px solid gold;
+  &.foo {
+    color: red
+  }
+`;
